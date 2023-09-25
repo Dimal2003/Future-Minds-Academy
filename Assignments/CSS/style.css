@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    float: left;
+    background: #c5ede4;
+    padding: 10px;
+    border: 1px solid #57cfad;
+    margin-right: 10px;
+}
