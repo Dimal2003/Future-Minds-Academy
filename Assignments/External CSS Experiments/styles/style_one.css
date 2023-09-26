@@ -1,11 +1,12 @@
-h1{
+h1 {
     font-size: 30px;
 }
-h2{
-    background-color:rgb(7, 84, 161);
+
+h2 {
+    background-color: rgb(7, 84, 161);
 }
 
-p{
+p {
     background-color: rgb(126, 250, 194);
     width: 500px;
 }
