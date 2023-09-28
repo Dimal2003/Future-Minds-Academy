@@ -1,14 +1,14 @@
-.light{
+.light {
     background-color: lightgray;
     color: black;
 }
 
-.dark{
+.dark {
     background-color: black;
     color: white;
 }
 
-.new{
+.new {
     border: 2px solid yellow;
     box-shadow: 2px 2px 2px grey;
 }
