@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(135deg, #f5f5f5 0%, #dcdcdc 100%);
+}
+
+nav ul {
+    background-color: rgba(56, 138, 161, 0.1);
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+}
+
+a:hover{
+    background-color: rgb(90, 121, 122);
+}
+
+.image {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%; 
+}
+
+.text {
+    background: linear-gradient(135deg, #d4d4d4 0%, #b0b0b0 100%);
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 900px; 
+    margin: 0 auto; 
+}
+
+h1{
+    background: linear-gradient(135deg, #d4d4d4 0%, #777373 100%);
+    padding: 15px;
+    border-radius: 10px;
+}
+h2 {
+    background: linear-gradient(135deg, #d4d4d4 0%, #777474 100%);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
