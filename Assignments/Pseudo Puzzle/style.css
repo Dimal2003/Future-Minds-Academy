@@ -1,0 +1,8 @@
+p:hover{
+    background-color: rgb(59, 143, 192);
+
+}
+
+p:hover::first-letter{
+    font-size: 80px;
+}
