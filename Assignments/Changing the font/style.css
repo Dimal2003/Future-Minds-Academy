@@ -1,0 +1,8 @@
+main > section {
+    font-family: 'Playfair Display', serif;
+}
+
+
+main > section ~ section {
+    font-family: 'Raleway', sans-serif;
+}
