@@ -1,19 +1,20 @@
-.big{
-    font-size: 65px;
-    float: left;
-    line-height: 0.5;
-    margin: 12px 10px 10px 0;
-    text-decoration: underline;
-    text-decoration-color: #f26a02;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;;
-  }
-  
-  .small{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-p{
+.big {
+  font-size: 65px;
+  float: left;
+  line-height: 0.5;
+  margin: 12px 10px 10px 0;
+  text-decoration: underline;
+  text-decoration-color: #f26a02;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  ;
+}
+
+.small {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
   width: 500px;
 }
