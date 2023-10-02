@@ -3,8 +3,7 @@
   float: left;
   line-height: 0.5;
   margin: 12px 10px 10px 0;
-  text-decoration: underline;
-  text-decoration-color: #f26a02;
+  text-decoration: underline #f26a02;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   ;
