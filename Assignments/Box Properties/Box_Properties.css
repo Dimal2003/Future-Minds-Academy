@@ -1,20 +1,26 @@
 .image {
-	float: left;
-	margin: 5px 10px 0 0;
-	border: 2px solid transparent;
-	padding: 10px;
-
+    float: left;
+    margin: 5px 10px 0 0;
+    border: 2px solid transparent;
+    padding: 10px;
+    box-sizing: border-box; 
 }
 
 .text {
-	padding: 15px 5px 10px 15px;
-	background-color: #3bf2ff;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	width: 45rem;
-	border: 1px solid black;
+    padding: 15px 5px 10px 15px;
+    background-color: #3bf2ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 45rem;
+    border: 1px solid black;
+    box-sizing: border-box; 
 }
 
 .image:hover {
-	border: 2px dashed red;
-	cursor: pointer;
+    border: 2px dashed red;
+    cursor: pointer;
+}
+
+.image:not(:hover) {
+    border: 1px solid black;
+    padding: 0;
 }
