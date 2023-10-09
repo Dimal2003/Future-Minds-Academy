@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    cursor: url(images/code-tech-dev.svg), auto; /*custom cursor*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0B0C10;
+    color: #C5C6C7;
+   
+
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: #1F2833;
+    border-radius: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #C5C6C7;
+}
+
+nav ul a:hover {
+    background-color: #45A29E;
+}
+
+
+/* Here I aligned in the center the Personal Portfolio title  */
+.header {
+    text-align: center;
+}
+
+/* Here I adjusted the paragraph font size */
+.about_me {
+    font-size: 1.2em;
+}
+
+/* Here is the css for the title Who is Dimal Hajrizi?*/
+.title {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/* Here I added the styles for my name when hovered */
+.name:hover {
+    color: #d9dee6;
+    font-size: 1.5em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(1, 8, 24);
+}
+
+
+
+/* Profile section styles */
+.profile {
+    background-color: #66FCF1;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2% 10%;
+    color: black;
+}
+
+/*My image in the profile section */
+.profile-img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 20px gray;
+    width: 30%;
+}
+
+/* The effect when i hoover the profile section */
+.profile:hover {
+    background-color: #3dccc2;
+    border: 3px solid white;
+}
+
+/* Education section styles */
+.education {
+    background-color: #66FCF1;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2% 10%;
+    color: #0B0C10;
+}
+
+.education:hover {
+    background-color: #3dccc2;
+    border: 3px solid white;
+}
+
+.education>h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* Here is the styles for all the ul in the Education section   */
+.edu {
+    background-color: #0B0C10;
+    border: 1px solid black;
+    border-radius: 20px;
+    list-style-type: none;
+    padding: 2%;
+    color: #C5C6C7;
+}
+
+/* Skills section styles */
+
+.skills {
+    background-color: #66FCF1;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    margin: 2% 10%;
+    padding: 2%;
+    color: black;
+}
+
+.skills:hover {
+    background-color: #3dccc2;
+    border: 3px solid white;
+}
+
+
+
+/* Table styles */
+.table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1em;
+}
+
+.table th {
+    padding: 15px;
+    border: 2px solid black;
+    background: rgb(137, 160, 160);
+    color: #0B0C10;
+}
+
+.table td {
+    padding: 15px;
+    border: 2px solid black;
+    background: rgb(255, 255, 255);
+}
+
+
+
+.myskills {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Projects section styles */
+.projects {
+    background-color: #66FCF1;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    margin: 2% 10%;
+    padding: 2%;
+    color: #0B0C10;
+}
+
+.projects:hover {
+    background-color: #3dccc2;
+    border: 3px solid white;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #0B0C10;
+    position: relative;
+    top: -5px;
+    background-color: rgb(58, 160, 255);
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.project_1,
+.project_2,
+.project_3 {
+    margin: 10px 0 0 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1F2833;
+    text-align: center;
+    font-weight: bold;
+    color: #66FCF1;
+    padding: 2%;
+    margin: 0;
+}

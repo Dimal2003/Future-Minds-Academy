@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	cursor: url(images/code-tech-dev.svg), auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: #1F2833;
+}
+
+/* Navigation styles */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	margin: 0 10px;
+}
+
+nav ul a {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px solid rgb(247, 242, 242);
+	background-color: #1F2833;
+	border-radius: 10px;
+	font-size: 1em;
+	text-decoration: none;
+	color: #C5C6C7;
+}
+
+nav ul a:hover {
+	background-color: #45A29E;
+}
+
+/* Here I aligned in the center the My projects title  */
+.header {
+	text-align: center;
+	color: white;
+}
+
+/* Here I styled the projects sections */
+.projects {
+	background-color: #66FCF1;
+	padding: 2%;
+	border: 1px solid black;
+	margin: 2%;
+	border-radius: 20px;
+}
+
+.projects:hover {
+	background-color: #2daaa2;
+}
+
+/* Here I styled my projects images*/
+img {
+	border: 1px solid black;
+	border-radius: 10px;
+	display: block;
+	margin: 10px auto;
+	max-width: 100%;
+}
+
+/* Return to homepage button */
+.return {
+	background-color: rgb(21, 144, 226);
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 15px;
+	text-decoration: none;
+	color: rgb(219, 235, 236);
+}
+
+/* Footer styles */
+footer {
+	background-color: #0B0C10;
+	text-align: center;
+	font-weight: bold;
+	color: #66FCF1;
+	padding: 1%;
+	margin: 0;
+}
