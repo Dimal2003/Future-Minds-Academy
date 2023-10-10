@@ -1,8 +1,8 @@
 body {
-	margin: 0;
+	margin: 1em 0 0 0;
 	cursor: url(images/code-tech-dev.svg), auto;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	background: #1F2833;
+	 background-image: url(images/background.jpg);
 }
 
 /* Navigation styles */
@@ -27,16 +27,27 @@ nav ul a {
 	font-size: 1em;
 	text-decoration: none;
 	color: #C5C6C7;
+    margin-bottom: 2em;
+
 }
 
 nav ul a:hover {
 	background-color: #45A29E;
 }
 
+
+.line{
+    width: 75%;
+}
+
 /* Here I aligned in the center the My projects title  */
 .header {
 	text-align: center;
 	color: white;
+    margin-top: 0.5em;
+    font-size: 3em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(1, 8, 24);
 }
 
 /* Here I styled the projects sections */
@@ -50,6 +61,7 @@ nav ul a:hover {
 
 .projects:hover {
 	background-color: #2daaa2;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 /* Here I styled my projects images*/
