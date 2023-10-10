@@ -1,146 +1,166 @@
 body {
-	margin: 0;
-	cursor: url(images/code-tech-dev.svg), auto;
-	background: #1F2833;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1em 0 0 0;
+    background-image: url(images/background.jpg);
+    cursor: url(images/code-tech-dev.svg), auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Navigation styles */
 nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-	display: inline;
-	margin: 0 10px;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul a {
-	display: inline-block;
-	padding: 10px 20px;
-	border: 1px solid rgb(243, 239, 239);
-	background-color: #1F2833;
-	border-radius: 10px;
-	font-size: 1em;
-	text-decoration: none;
-	color: #C5C6C7;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgb(243, 239, 239);
+    background-color: #1F2833;
+    border-radius: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #C5C6C7;
+    margin-bottom: 2em;
 }
 
 nav ul a:hover {
-	background-color: #45A29E;
+    background-color: #45A29E;
 }
 
-/* Here i  */
+.line {
+    width: 75%;
+}
+
+/* Here I aligned the header text and gave the text color white  */
 .header {
-	text-align: center;
-	color: white;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(1, 8, 24);
 }
 
+
+
+
+.message {
+    text-align: center;
+    background-color: #c7f5f8;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin: 5% auto;
+    padding: 5%;
+    max-width: 50%;
+}
+
+.message h2 {
+    color: #3498db;
+}
+
+.message form input[type="email"] {
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.message form input[type="button"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.message form input[type="button"]:hover {
+    background-color: #2980b9;
+}
 
 input[type="email"] {
-	background-color: #1F2833;
-	padding: 1em;
-	border: 1px solid black;
-	border-radius: 10px;
+    background-color: #1F2833;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 /* Here are the textarea styles */
 textarea {
-	background-color: #f5eded;
-	color: #666666;
-	padding: 1em;
-	border-radius: 10px;
-	border: 0.2em solid transparent;
-	outline: none;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: bold;
-	font-size: 1em;
-	line-height: 1.4;
-	width: 40%;
-	height: 7em;
-	transition: all 0.2s;
-	resize: none;
-	margin-top: 2%;
-	margin-bottom: 2%;
+    background-color: #f5eded;
+    color: #666666;
+    padding: 1em;
+    border-radius: 10px;
+    border: 0.2em solid transparent;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.4;
+    width: 40%;
+    height: 7em;
+    transition: all 0.2s;
+    resize: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 textarea:hover {
-	cursor: pointer;
-	background-color: #eeeeee;
+    cursor: pointer;
+    background-color: #eeeeee;
 }
 
 textarea:focus {
-	cursor: text;
-	color: #333333;
-	background-color: white;
-	border-color: #333333;
-}
-
-.message {
-	text-align: center;
-	background-color: #c7f5f8;
-	border: 3px solid black;
-	border-radius: 1.5rem;
-	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-	margin: 5% auto;
-	padding: 5%;
-	max-width: 50%;
-}
-
-.message h2 {
-	color: #3498db;
-}
-
-.message form input[type="email"] {
-	color: white;
-	border: none;
-	cursor: pointer;
-	padding: 1em;
-	border-radius: 10px;
-	width: 40%;
-}
-
-.message form input[type="button"] {
-	background-color: #3498db;
-	color: white;
-	border: none;
-	cursor: pointer;
-	padding: 1em;
-	border-radius: 10px;
-	width: 40%;
-}
-
-.message form input[type="button"]:hover {
-	background-color: #2980b9;
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #333333;
 }
 
 
 .connect {
-	text-align: center;
-	margin: 2%;
-	color: white;
+    text-align: center;
+    margin: 2%;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(1, 8, 24);
 }
 
 .connect a {
-	margin: 0 2%;
-	display: inline-block;
+    margin: 0 2%;
+    display: inline-block;
 }
 
 .connect a img {
-	width: 4em;
-	height: 4em;
+    width: 4em;
+    height: 4em;
 }
 
 .connect a img:hover {
-	opacity: 0.8;
+    opacity: 0.8;
+}
+
+.icons{
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 25%;
+    margin: auto;
 }
 
 footer {
-	background-color: #0B0C10;
-	color: #66FCF1;
-	text-align: center;
-	padding: 1%;
+    background-color: #0B0C10;
+    color: #66FCF1;
+    text-align: center;
+    padding: 1%;
 }
