@@ -1,11 +1,8 @@
 body {
-    margin: 0;
+    margin: 1em 0 0 0;
     cursor: url(images/code-tech-dev.svg), auto; /*custom cursor*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #0B0C10;
-    color: #C5C6C7;
-   
-
+    background-image: url(images/background.jpg);
 }
 
 /* Navigation styles */
@@ -24,22 +21,31 @@ nav ul li {
 nav ul a {
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     background-color: #1F2833;
     border-radius: 10px;
     font-size: 1em;
     text-decoration: none;
     color: #C5C6C7;
+    margin-bottom: 2em;
 }
 
 nav ul a:hover {
     background-color: #45A29E;
 }
 
+.line{
+    width: 80%;
+}
 
 /* Here I aligned in the center the Personal Portfolio title  */
 .header {
     text-align: center;
+    margin-top: 1em;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size: 3em;
 }
 
 /* Here I adjusted the paragraph font size */
@@ -206,6 +212,7 @@ footer {
     text-align: center;
     font-weight: bold;
     color: #66FCF1;
+    margin: auto;
     padding: 2%;
-    margin: 0;
+    width: 75%;
 }
