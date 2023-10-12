@@ -51,6 +51,7 @@ nav ul a:hover {
 /* Here I adjusted the paragraph font size */
 .about_me {
     font-size: 1.2em;
+    text-align: justify;
 }
 
 /* Here is the css for the title Who is Dimal Hajrizi?*/
