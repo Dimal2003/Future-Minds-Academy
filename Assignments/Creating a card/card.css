@@ -11,7 +11,7 @@ body {
   
 @font-face {
     font-family: myfont;
-    src: url(fonts/WLM\ Idea\ Alt.ttf);
+    src: url(font/WLM\ Idea\ Alt.ttf);
 }
 
   .card {
@@ -54,8 +54,6 @@ body {
   
   .day {
     font-size: 2em;
-    font-weight: 900;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .month {
