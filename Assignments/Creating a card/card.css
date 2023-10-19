@@ -1,0 +1,77 @@
+body {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    font-family: myfont;
+  }
+
+  
+@font-face {
+    font-family: myfont;
+    src: url(fonts/WLM\ Idea\ Alt.ttf);
+}
+
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    border: 5px solid black;
+  }
+  
+  .image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 20px;
+    padding: 15px;
+    flex-grow: 1;
+    font-weight: 900;
+    font-size: 2em;
+  }
+  
+  .card-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 50px;
+    flex-grow: 1;
+  }
+  
+  .day {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .month {
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+  
+  .year {
+    font-size: 0.7em;
+  }
+  
+  .card-copyright {
+    position: absolute;
+    top: 15%;
+    color: white;
+    padding: 5px 10px;
+    width: 15%;
+  }
+  
