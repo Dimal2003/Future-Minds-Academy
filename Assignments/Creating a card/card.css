@@ -17,7 +17,7 @@ body {
   .card {
     display: flex;
     flex-direction: column-reverse;
-    width: 15%;
+    width: 200px;
     border: 5px solid black;
   }
   
@@ -36,7 +36,6 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    border-bottom: none;
     width: 20px;
     padding: 15px;
     flex-grow: 1;
@@ -49,7 +48,6 @@ body {
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
-    border-bottom: none;
     width: 50px;
     flex-grow: 1;
   }
