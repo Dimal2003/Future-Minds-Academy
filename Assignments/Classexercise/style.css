@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.card-image {
+    border-radius: 10px 10px 0px 0px;
+    height: 200px;
+}
+
+.card-date {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-description {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card-detail-top {
+    display: flex;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.card-detail-bottom {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.card:nth-child(1) .card-details {
+    background-color: #f0340a;
+}
+
+.card:nth-child(1) .card-details,
+.card:nth-child(1) .card-date {
+    color: rgb(245, 16, 16);
+}
+
+.card:nth-child(2) .card-details {
+    background-color: #4caf50;
+}
+
+.card:nth-child(2) .card-details,
+.card:nth-child(2) .card-date {
+    color: #4caf50;
+    ;
+}
+
+
+.card:nth-child(3) .card-details {
+    background-color: #2196f3;
+}
+
+.card:nth-child(3) .card-details,
+.card:nth-child(3) .card-date {
+    color: #2196f3;
+}
+
+
+
+
+.card:nth-child(1) .card-image {
+    background-image: url(image/image.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(2) .card-image {
+    background-image: url(image/New-York.jfif);
+    background-size: cover;
+    background-position: right;
+}
+
+/* CSS for the third card */
+.card:nth-child(3) .card-image {
+    background-image: url(image/Miami-Florida.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
