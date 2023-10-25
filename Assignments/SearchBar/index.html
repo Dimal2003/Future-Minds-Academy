@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .search-bar{
+            width: 18rem;
+            padding: 0.5rem;
+            margin: 1rem;
+            border-radius: 7rem;
+            display: inline-flex;
+            align-items: center;
+            box-shadow: inset 0px 0px 20px lightgrey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(144, 144, 144);
+        }
+
+        .search-bar-input{
+            flex-grow: 1;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 1.2rem;
+            color: inherit;
+        }
+
+        .search-bar-input::placeholder{
+            color: #b6b6b6;
+        }
+
+        .search-icon{
+            width: 1.3em;
+        }
+        .search-bar-input:focus + .search-icon{
+            width: 1.5rem;
+        }
+
+        .search-bar:has(.search-bar-input:focus){
+            outline: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <span class="search-bar">
+        <input type="text" class="search-bar-input" placeholder="Search">
+        <img class="search-icon" src="image/search-svgrepo-com (1).svg" alt="search-icon">
+    </span>
+</body>
+</html>
