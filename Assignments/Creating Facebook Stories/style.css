@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.stories-container{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: scroll;
+    box-shadow: inset 0px 0px 20px 0px #ababab;
+    border-radius: 20px; 
+}
+
+.story{
+    width: 140px;
+    height: 250px;
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    box-shadow: 0px -25px 20px 0px inset #70707061;
+    cursor: pointer;
+}
+
+.user-image{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    background-size: cover;
+    border: 4px solid rgb(37, 81, 241);
+    background-color: white;
+}
+
+.status{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.online{background-color: rgb(3, 203, 3);}
+.offline{background-color: #ababab;}
+
+.story:hover{
+    background-color: rgba(28,28, 28, 0.2);
+    background-blend-mode: luminosity;
+}
+
+.user-name{
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+
+
