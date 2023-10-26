@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, rgba(62, 79, 94, 1), rgba(62, 79, 94, 0.8));
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-container {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 60px;
+
+	background-color: white;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	color: rgb(45, 78, 107);
+}
+
+.form-group {
+	margin: 10px 0;
+}
+
+.input-field {
+	border: none;
+	border-bottom: 1px solid gainsboro;
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	background: none;
+
+}
+
+.input-label {
+	color: rgb(1, 5, 15);
+	font-size: 1.2em;
+}
+
+
+.forgot-password {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 0.9em;
+	margin: 5px;
+}
+
+.forgot-password a {
+	text-decoration: none;
+	color: black;
+}
+
+.button-container {
+	text-align: center;
+}
+
+.login-button {
+	border: none;
+	padding: 5px;
+	width: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: rgb(62, 79, 94);
+	color: white;
+	font-family: inherit;
+	font-size: 1.2em;
+}
+
+.signup {
+	font-size: 0.9em;
+	text-align: center;
+	margin: 5px;
+}
+
+.signup a {
+	text-decoration: none;
+	color: black;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+
+	cursor: pointer;
+}
