@@ -56,7 +56,6 @@ body {
 	margin-left: 250px;
 	display: flex;
 	flex-direction: column;
-	position: relative;
 }
 
 .top-text {
