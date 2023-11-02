@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 100vh;
+            column-gap: 5em;
+        }
+
+        .red {
+            background-color: rgb(236,133,134);
+            grid-column: 1/5;
+        }
+
+        .green {
+            background-color: rgb(106,218,125);
+            grid-row: 2 / span 1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="green"></div>
+    <div class="green"></div>
+    <div class="green"></div>
+    <div class="red"></div>
+</body>
+</html>
