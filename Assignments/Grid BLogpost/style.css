@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: auto 1fr;
+ }
+
+ aside {
+	background-color: rgb(62, 79, 94);
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: right;
+ }
+
+ main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+ }
+
+ .aside-text {
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: right;
+ }
+
+ .lorem {
+	font-size: 1.4em;
+	color: rgb(180, 194, 206);
+ }
+
+ .aside-button {
+	text-align: center;
+	border: 2px solid rgb(176, 185, 194);
+	color: white;
+	background-color: rgb(62, 79, 94);
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-top: 10px;
+ }
+
+ .aside-button a {
+	text-decoration: none;
+	color: white;
+ }
+
+ .aside-button:hover {
+	background-color: rgb(111, 132, 150);
+ }
+
+ .top-text {
+	border-bottom: 1px solid rgb(143, 143, 143);
+	padding: 5px;
+	color: gray;
+	text-transform: uppercase;
+	font-size: 1.2em;
+ }
+
+ .title-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+ .title {
+	font-size: 3em;
+	margin: 5px;
+ }
+
+ .image {
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+ }
+
+ .name {
+	color: blue;
+ }
+
+ .author {
+	font-size: 1.3em;
+ }
+
+ .button {
+	border: none;
+	text-transform: uppercase;
+	color: white;
+	padding: 5px;
+ }
+
+ .text {
+	font-size: 1.3em;
+ }
+
+ .css {
+	background-color: rgb(90, 187, 88);
+ }
+
+ .html {
+	background-color: rgb(77, 133, 209);
+ }
+
+ .javascript {
+	background-color: rgb(223, 45, 80);
+ }
