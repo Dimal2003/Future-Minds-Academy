@@ -31,8 +31,6 @@
             grid-row: 1 / 4;
             background: url(assets/card-1.jpeg) no-repeat;
             background-size: cover;
-            position: sticky;
-            top: 0;
             overflow-y: auto;
         }
 
