@@ -4,15 +4,24 @@
     --sidebar-image: url('assets/sidebar-1.jpg');
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     display: grid;
-    height: 100vh;
     grid-template-columns: minmax(250px, auto)1fr;
     grid-template-rows: 1fr;
     background-color: rgb(238, 238, 238);
     font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.dashboard-container{
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 header {
@@ -28,8 +37,6 @@ main {
     overflow-y: auto;
     gap: 3rem;
     padding: 1rem;
-    height: 100vh;
-    overflow-y: scroll;
 }
 
 nav {
@@ -59,6 +66,7 @@ nav a {
     text-decoration: none;
     color: white;
     border-radius: 0.6rem;
+    font-size: 0.8em;
 }
 
 nav a:hover {
@@ -87,7 +95,6 @@ nav a:hover {
     background-color: #f9f9f9;
     min-width: 15rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 0.8rem 1rem;
     z-index: 1;
     top: -0.9rem;
     right: 1.2rem;
@@ -100,14 +107,12 @@ nav a:hover {
 .dropdown-content ul li {
     display: inline-block;
     transition: background-color 0.3s;
-    padding: 0.6rem 1.5rem;
 
 }
 
 .dropdown-content li:hover {
     background-color: var(--active-color);
     cursor: pointer;
-    padding: 0.6rem 1.5rem;
 }
 
 
@@ -244,6 +249,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-weight: 100;
 
 }
 
@@ -282,6 +288,7 @@ table {
 td {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+    font-size: 0.8em;
 }
 
 table tr td {
@@ -291,7 +298,8 @@ table tr td {
 
 .info {
     display: flex;
-    color: black;
+    align-items: center;
+    color: grey;
     border-top: 1px solid gray;
     padding: 1rem;
 }
@@ -301,8 +309,8 @@ table tr td {
     justify-content: center;
     align-items: center;
     color: white;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     padding: 0.6rem;
     position: absolute;
     top: -2rem;
@@ -343,6 +351,10 @@ table tr td {
     justify-content: center;
 }
 
+.apartment-title{
+    font-weight: 100;
+}
+
 .apartment-card {
     padding: 1.2rem;
     border-radius: 0.6rem;
@@ -358,10 +370,11 @@ table tr td {
     border-radius: 0.6rem;
     margin-top: -3rem;
     transition: transform 0.4s ease-in-out;
+    width: 100%;
 }
 
-.apartment-card:hover img {
-    transform: translateY(-2rem);
+.apartment-card img:hover {
+    transform: translateY(-1rem);
 }
 
 .icons {
@@ -401,6 +414,10 @@ table tr td {
     text-transform: uppercase;
     margin-bottom: 0;
     font-size: 1.2em;
+}
+
+.apartment-description{
+    font-size: 0.8em;
 }
 
 .apartment-card p {
@@ -468,7 +485,7 @@ footer span {
         display: grid;
         grid-template-columns: 1fr;
     }
-
+    
     nav {
         display: none;
     }
