@@ -1,10 +1,10 @@
 :root {
     --active-color: blue;
-    --icon-color:red;
+    --icon-color: red;
     --sidebar-image: url('assets/sidebar-1.jpg');
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -19,7 +19,12 @@ body {
     font-weight: 200;
 }
 
-.dashboard-container{
+.main-container {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.nav-container {
     height: 100vh;
     overflow-y: scroll;
 }
@@ -28,13 +33,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
     gap: 3rem;
     padding: 1rem;
 }
@@ -43,7 +47,6 @@ nav {
     background: var(--sidebar-image) no-repeat;
     background-size: cover;
     height: 100vh;
-    overflow-y: scroll;
     padding: 0.7rem;
     background-color: rgba(10, 9, 9, 0.8);
     background-blend-mode: darken;
@@ -55,7 +58,7 @@ ul {
     padding: 0;
 }
 
-ul li {
+nav ul li {
     margin-bottom: 0.6rem;
 }
 
@@ -84,17 +87,22 @@ nav a:hover {
     align-items: center;
 }
 
+.header-icon {
+    cursor: pointer;
+}
+
 .notification-dropdown {
     position: relative;
     display: inline-block
 }
+
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 15rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
     z-index: 1;
     top: -0.9rem;
     right: 1.2rem;
@@ -104,13 +112,18 @@ nav a:hover {
     display: block;
 }
 
-.dropdown-content ul li {
-    display: inline-block;
-    transition: background-color 0.3s;
-
+.notification-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.dropdown-content li:hover {
+.notification-dropdown ul li {
+    padding: 0.4rem;
+    transition: background-color 0.3s;
+}
+
+.notification-dropdown ul li:hover {
     background-color: var(--active-color);
     cursor: pointer;
 }
@@ -121,7 +134,7 @@ nav a:hover {
     display: none;
 }
 
-.circle {
+.header-circle {
     background-color: white;
     border-radius: 50%;
     width: 3rem;
@@ -130,7 +143,13 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    box-shadow: 0px 0px 11px 0px grey;
+    box-shadow: 0rem 0rem 0.5rem 0rem grey;
+    cursor: pointer;
+    transition: box-shadow 0.9s;
+}
+
+.header-circle:hover {
+    box-shadow: 0rem 0rem 0.7rem 0.2rem grey;
 }
 
 .dashboard {
@@ -147,16 +166,11 @@ nav a:hover {
 
 .search-bar {
     padding: 0.5rem;
-    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     color: rgb(144, 144, 144);
 }
 
-.search-bar:active {
-    transition: 5s ease-in-out;
-    border-bottom: 3px solid purple;
-}
 
 .search-bar-input {
     border: none;
@@ -164,26 +178,41 @@ nav a:hover {
     outline: none;
     font-size: 1rem;
     color: inherit;
+    border-bottom: 1px solid black;
+
 }
 
 .search-bar-input::placeholder {
     color: #b6b6b6;
 }
 
+
+
 .search-icon {
     border-radius: 50%;
     background-color: white;
     color: black;
-    padding: 1rem;
+    padding: 0.6rem;
     cursor: pointer;
+    transition: box-shadow 0.9s;
 }
 
-.search-icon:active {
-    transition: 5s transform ease-in-out;
-    box-shadow: 0px 0px 8px 4px gray;
+.search-icon:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.2rem gray;
 }
 
-.icons-container {
+.search-icon:focus {
+    box-shadow: 0rem 0rem 0.5rem 0.25rem gray;
+}
+
+.search-bar-input:focus {
+    outline: none;
+    border-bottom: 2px solid purple;
+    transition: border-color 0.5s ease-out;
+}
+
+
+.header-container {
     display: flex;
     gap: 0.9rem;
     position: relative;
@@ -220,7 +249,7 @@ nav a:hover {
 
 .logo {
     border-bottom: 1px solid white;
-    padding: 10px;
+    padding: 0.6rem;
     margin: 0.1rem;
     text-align: left;
     color: white;
@@ -236,7 +265,7 @@ nav a:hover {
 }
 
 
-.top-header {
+.tablemap-header {
     position: absolute;
     display: flex;
     top: -1rem;
@@ -244,7 +273,7 @@ nav a:hover {
     width: 100%;
 }
 
-.top-header h2 {
+.tablemap-header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +282,7 @@ nav a:hover {
 
 }
 
-.top-header .top-left {
+.tablemap-icon {
     background-color: green;
     color: white;
     width: 5rem;
@@ -268,7 +297,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 2rem;
-    box-shadow: 5px 5px 5px 5px grey;
+    box-shadow: 0rem 0rem 0.6rem 0rem grey;
     background-color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -296,7 +325,7 @@ table tr td {
 }
 
 
-.info {
+.card-info {
     display: flex;
     align-items: center;
     color: grey;
@@ -309,8 +338,8 @@ table tr td {
     justify-content: center;
     align-items: center;
     color: white;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     padding: 0.6rem;
     position: absolute;
     top: -2rem;
@@ -351,7 +380,7 @@ table tr td {
     justify-content: center;
 }
 
-.apartment-title{
+.apartment-title {
     font-weight: 100;
 }
 
@@ -359,7 +388,7 @@ table tr td {
     padding: 1.2rem;
     border-radius: 0.6rem;
     background-color: white;
-    box-shadow: 5px 5px 5px 5px gray;
+    box-shadow: 0rem 0rem 0.2rem 0rem gray;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -374,35 +403,40 @@ table tr td {
 }
 
 .apartment-card img:hover {
-    transform: translateY(-1rem);
+    transform: translateY(-2rem);
 }
 
-.icons {
+.edit-icons {
     display: flex;
     justify-content: center;
-    transition: transform 0.4s ease-in-out;
     opacity: 0;
+    position: absolute;
+    top: 11.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
-.apartment-card:hover .icons {
+.apartment-card img:hover+.edit-icons {
     opacity: 1;
 }
 
 
 
-.icons .view {
+.edit-icons .view {
     font-size: 1.6em;
     color: #444;
     cursor: pointer;
 }
 
-.icons .edit {
+.edit-icons .edit {
     font-size: 1.3em;
     color: green;
     cursor: pointer;
 }
 
-.icons .close {
+.edit-icons .close {
     font-size: 1.3em;
     color: red;
     cursor: pointer;
@@ -414,9 +448,10 @@ table tr td {
     text-transform: uppercase;
     margin-bottom: 0;
     font-size: 1.2em;
+    padding: 0.3rem;
 }
 
-.apartment-description{
+.apartment-description {
     font-size: 0.8em;
 }
 
@@ -437,17 +472,16 @@ table tr td {
 }
 
 .price {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .location {
-    font-size: 0.9em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
+    color: grey;
 
 }
-
-
 
 footer {
     display: flex;
@@ -459,8 +493,9 @@ footer {
     border-top: 1px solid grey;
 }
 
-footer span {
-    cursor: pointer;
+footer a {
+    text-decoration: none;
+    color: black;
 }
 
 .orange {
@@ -485,7 +520,11 @@ footer span {
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
+    .nav-container {
+        display: none;
+    }
+
     nav {
         display: none;
     }

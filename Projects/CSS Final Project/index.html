@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="dashboard-container">
+    <div class="nav-container">
         <nav>
             <div>
                 <ul>
@@ -36,12 +36,12 @@
         </nav>
     </div>
     </div>
-    <div class="dashboard-container">
+    <div class="main-container">
         <main>
             <header>
                 <div class="header-container">
                     <div class="dashboard">
-                        <div class="circle"><span class="material-icons" title="Dashboard">more_vert</span></div>
+                        <div class="header-circle"><span class="material-icons" title="Dashboard">more_vert</span></div>
                         <span>Dashboard</span>
                     </div>
                 </div>
@@ -49,12 +49,12 @@
                 <div class="left">
                     <div class="search-bar">
                         <input type="text" class="search-bar-input" placeholder="Search">
+                        <span class="material-icons search-icon" title="Search">search</span>
                     </div>
-                    <span class="material-icons search-icon" title="Search">search</span>
-                    <div class="icons-container">
-                        <span class="material-icons" title="Dashboard">dashboard</span>
+                    <div class="header-icons">
+                        <span class="material-icons header-icon" title="Dashboard">dashboard</span>
                         <div class="notification-dropdown">
-                            <span class="material-icons" title="Notifications">notifications</span>
+                            <span class="material-icons header-icon" title="Notifications">notifications</span>
                             <span class="badge" data-count="5">5</span>
                             <div class="dropdown-content">
                                 <ul>
@@ -66,14 +66,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <span class="material-icons" title="Profile">person</span>
+                        <span class="material-icons header-icon" title="Profile">person</span>
                     </div>
                 </div>
             </header>
 
             <div class="table-map">
-                <div class="top-header">
-                    <h2><span class="material-icons top-left">language</span>Global Sales by Top Locations</h2>
+                <div class="tablemap-header">
+                    <h2><span class="material-icons tablemap-icon">language</span>Global Sales by Top Locations</h2>
                 </div>
                 <div class="table">
                     <table>
@@ -130,7 +130,7 @@
                             <span style="font-size: 0.8em;">Bookings</span>
                             <span style="font-size: 1.6em;">184</span>
                         </div>
-                        <div class="info">
+                        <div class="card-info">
                             <span class="material-icons">warning</span>
                             <span>Get more space</span>
                         </div>
@@ -141,7 +141,7 @@
                             <span style="font-size: 0.8em;">Website Visits</span>
                             <span style="font-size: 1.6em;">75.521</span>
                         </div>
-                        <div class="info">
+                        <div class="card-info">
                             <span class="material-icons">sell</span>
                             <span>Tracked from Google Analytics</span>
                         </div>
@@ -153,7 +153,7 @@
                             <span style="font-size: 0.8em;">Revenue</span>
                             <span style="font-size: 1.6em;">$34,245</span>
                         </div>
-                        <div class="info">
+                        <div class="card-info">
                             <span class="material-icons">date_range</span>
                             <span>Last 24 hours</span>
                         </div>
@@ -164,7 +164,7 @@
                             <span style="font-size: 0.8em;">Followers</span>
                             <span style="font-size: 1.6em;">+245</span>
                         </div>
-                        <div class="info">
+                        <div class="card-info">
                             <span class="material-icons">update</span>
                             <span>Just Uploaded</span>
                         </div>
@@ -177,7 +177,7 @@
                 <div class="apartment-container">
                     <div class="apartment-card">
                         <img src="assets/card-1.jpeg" alt="Cozy 5 Stars Apartment">
-                        <div class="icons">
+                        <div class="edit-icons">
                             <span class="material-icons view" title="view">art_track</span>
                             <span class="material-icons edit" title="edit">edit</span>
                             <span class="material-icons close" title="close">close</span>
@@ -193,7 +193,7 @@
                     </div>
                     <div class="apartment-card">
                         <img src="assets/card-2.jpeg" alt="City Center Studio">
-                        <div class="icons">
+                        <div class="edit-icons">
                             <span class="material-icons view" title="view">art_track</span>
                             <span class="material-icons edit" title="edit">edit</span>
                             <span class="material-icons close" title="close">close</span>
@@ -208,8 +208,8 @@
                     </div>
 
                     <div class="apartment-card">
-                        <img src="assets/card-3.jpeg" alt="Spacious Urban Loft">
-                        <div class="icons">
+                        <img class="img" src="assets/card-3.jpeg" alt="Spacious Urban Loft">
+                        <div class="edit-icons">
                             <span class="material-icons view" title="view">art_track</span>
                             <span class="material-icons edit" title="edit">edit</span>
                             <span class="material-icons close" title="close">close</span>
@@ -227,10 +227,10 @@
         </main>
         <footer>
             <div>
-                <span class="footer">Home</span>
-                <span class="footer">Company</span>
-                <span class="footer">Portfolio</span>
-                <span class="footer">Blog</span>
+                <a href="#">Home</a>
+                <a href="#">Company</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
             </div>
             <span>&copy; <em>John Doe</em> 2023</span>
         </footer>
