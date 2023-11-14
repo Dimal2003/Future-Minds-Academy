@@ -1,7 +1,11 @@
 :root {
-    --active-color: blue;
-    --icon-color: red;
+    --active-color: red;
     --sidebar-image: url('assets/sidebar-1.jpg');
+    --tablemap-icon:rgb(79,166,80);
+    --bookings-icon:rgb(255, 165, 0); 
+    --websitevisits-icon: rgb(222, 44, 104);
+    --revenue-icon:rgb(80, 168, 83);
+    --followers-icon:rgb(90, 183, 203);
 }
 
 * {
@@ -138,6 +142,7 @@ nav a:hover {
 
 .menu {
     display: none;
+    cursor: pointer;
 }
 
 .header-circle {
@@ -289,7 +294,7 @@ nav a:hover {
 }
 
 .tablemap-icon {
-    background-color: green;
+    background-color: var(--tablemap-icon);
     color: white;
     width: 5rem;
     height: 5rem;
@@ -328,6 +333,9 @@ td {
 
 table tr td {
     border-bottom: 1px solid black;
+}
+table tr:last-child td {
+    border-bottom: none;
 }
 
 
@@ -499,19 +507,19 @@ footer a {
 }
 
 .orange {
-    background-color: orange;
+    background-color: var(--bookings-icon);
 }
 
 .pink {
-    background-color: rgb(222, 44, 104);
+    background-color: var(--websitevisits-icon);
 }
 
 .green {
-    background-color: rgb(80, 168, 83);
+    background-color: var(--revenue-icon);
 }
 
 .blue {
-    background-color: rgb(90, 183, 203);
+    background-color: var(--followers-icon);
 }
 
 
