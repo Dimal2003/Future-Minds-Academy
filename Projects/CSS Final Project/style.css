@@ -1,3 +1,4 @@
+
 :root {
     --active-color: red;
     --sidebar-image: url('assets/sidebar-1.jpg');
@@ -142,7 +143,6 @@ nav a:hover {
 
 .menu {
     display: none;
-    cursor: pointer;
 }
 
 .header-circle {
@@ -371,11 +371,32 @@ table tr:last-child td {
     border-radius: 0.6rem;
     background-color: white;
     position: relative;
-
 }
 
+.card-icon{
+    font-size: 1em;
+}
 
-.title {
+.revenue-label,
+.followers-label,
+.time-period,
+.upload-status,
+.bookings-label,
+.warning,
+.website-visits,
+.sellings {
+    font-size: 0.8em;
+}
+
+.revenue-amount,
+.followers-count,
+.bookings-count,
+.website-visits-amount,
+.visits-amount{
+    font-size: 1.4em;
+}
+
+.card-text {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
