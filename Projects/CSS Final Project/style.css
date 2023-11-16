@@ -186,6 +186,7 @@ nav a:hover {
 
 .menu {
 	display: none;
+	cursor: pointer;
 }
 
 .header-circle {
@@ -610,17 +611,14 @@ table tr:last-child td {
 	width: 100%;
 }
 
-.apartment-card .image-container {
-	position: relative;
-}
 
-.apartment-card .image-container:hover img {
+.image-container:hover img {
 	-webkit-transform: translateY(-2rem);
 	    -ms-transform: translateY(-2rem);
 	        transform: translateY(-2rem);
 }
 
-.apartment-card .image-container .edit-icons {
+.image-container .edit-icons {
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
@@ -628,7 +626,7 @@ table tr:last-child td {
 	margin-top: -2rem;
 }
 
-.apartment-card .image-container:hover .edit-icons {
+.image-container:hover .edit-icons {
 	opacity: 1;
 }
 
