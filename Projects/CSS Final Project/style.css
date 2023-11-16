@@ -661,12 +661,12 @@ table tr:last-child td {
 
 .apartment-description {
 	font-size: 0.8em;
+	margin-top: auto;
 }
 
 .apartment-card p {
 	color: grey;
 	font-size: 1em;
-	text-transform: uppercase;
 	text-align: center;
 	padding: 1rem;
 }
@@ -681,6 +681,7 @@ table tr:last-child td {
 	gap: 1rem;
 	color: black;
 	border-top: 0.06rem solid black;
+	padding: 0.6rem;
 }
 
 .price {
