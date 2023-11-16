@@ -85,7 +85,6 @@ main {
 nav {
 	background: var(--sidebar-image) no-repeat;
 	background-size: cover;
-	height: 100vh;
 	padding: 0.7rem;
 	background-color: var(--sidebar-overlay);
 	background-blend-mode: darken;
@@ -140,6 +139,7 @@ nav a:hover {
 
 .header-icon {
 	cursor: pointer;
+	margin-right: 0.75rem;
 }
 
 .notification-dropdown {
@@ -156,8 +156,8 @@ nav a:hover {
 	-webkit-box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
 	        box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
 	z-index: 1;
-	top: -0.9rem;
-	right: 1.2rem;
+	top: -0.5rem;
+	right: 1.8rem;
 }
 
 .notification-dropdown:hover .dropdown-content {
@@ -320,14 +320,13 @@ nav a:hover {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	gap: 0.9rem;
 	position: relative;
 }
 
 .badge {
 	position: absolute;
 	top: -0.2rem;
-	right: -0.1rem;
+	right: 0.6rem;
 	display: inline-block;
 	background-color: red;
 	color: white;
@@ -355,20 +354,23 @@ nav a:hover {
 	    -ms-flex-align: center;
 	        align-items: center;
 	padding: 1rem 0;
-	border-bottom: 0.06rem solid white;
+	border-bottom: 0.06rem solid rgb(94, 86, 86);
 	color: white;
-	margin: 0.5rem;
+	margin-bottom: 0.9rem;
 	font-size: 1.2rem;
 }
 
 .logo {
-	border-bottom: 0.06rem solid white;
-	padding: 0.6rem;
-	margin: 0.1rem;
+	border-bottom: 0.06rem solid rgb(94, 86, 86);
+	padding: 1rem;
 	text-align: left;
 	color: white;
 	text-transform: uppercase;
 	font-size: 1.3rem;
+}
+
+.nav-icon{
+	margin-right: 0.75rem;
 }
 
 .profile-img {
@@ -380,7 +382,6 @@ nav a:hover {
 
 .profile-name{
 	display: flex;
-	margin-right: 0.8rem;
 }
 
 .tablemap-header {
@@ -593,6 +594,7 @@ table tr:last-child td {
 	transition: transform 0.4s ease-in-out;
 	transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 	width: 100%;
+	z-index: 1;
 }
 
 
@@ -610,6 +612,7 @@ table tr:last-child td {
 	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	width: 100%;
+	z-index: -1;
 }
 
 
