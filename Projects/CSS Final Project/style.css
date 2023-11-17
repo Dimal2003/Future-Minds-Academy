@@ -288,7 +288,7 @@ nav a:hover {
 	border-radius: 50%;
 	background-color: white;
 	color: black;
-	padding: 0.6rem;
+	padding: 0.8rem;
 	cursor: pointer;
 	-webkit-transition: -webkit-box-shadow 0.9s;
 	transition: -webkit-box-shadow 0.9s;
@@ -432,10 +432,8 @@ nav a:hover {
 	-ms-grid-columns: auto 2rem 1fr;
 	grid-template-columns: auto 1fr;
 	grid-gap: 2rem;
-	-webkit-box-shadow: 0rem 0rem 0.6rem 0rem grey;
-	        box-shadow: 0rem 0rem 0.6rem 0rem grey;
 	background-color: white;
-	border-radius: 1rem;
+	border-radius: 0.4rem;
 	padding: 1rem;
 	padding-top: 5rem;
 	position: relative;
@@ -508,7 +506,7 @@ table tr:last-child td {
 
 .card {
 	padding: 1.7rem;
-	border-radius: 0.6rem;
+	border-radius: 0.4rem;
 	background-color: white;
 	position: relative;
 }
@@ -606,13 +604,7 @@ table tr:last-child td {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	opacity: 0;
-	-webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-	-o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	width: 100%;
-	z-index: -1;
 }
 
 
@@ -624,10 +616,8 @@ table tr:last-child td {
 
 .image-container .edit-icons {
 	opacity: 0;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
 	margin-top: -2rem;
+
 }
 
 .image-container:hover .edit-icons {
