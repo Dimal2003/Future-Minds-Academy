@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            background-color: rgb(195,194,196);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 0.7rem;
+            position: relative;
+        }
+
+        .inputs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        input:focus+.hidden-text {
+            opacity: 1;
+            display: inline-block;
+        }
+
+        input:focus {
+            outline: 1px solid blue;
+        }
+
+        input {
+            padding: 0.7rem;
+            width: 20rem;
+        }
+
+        .name-container {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        .hidden-text {
+            display: none;
+            opacity: 0;
+            color: rgb(71, 70, 70);
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            animation: fade-in 0.5s ease-in-out;
+        }
+
+        button {
+            background-color: rgb(65,59,202);
+            border: none;
+            color: white;
+            padding: 0.8rem 1.2rem 0.8rem 1rem;
+            cursor: pointer;
+            margin: 0.2rem auto 0rem 0.5rem;
+
+        }
+
+        img{
+            width: 2.5rem;
+            position: absolute;
+            bottom: 3.5rem;
+            right: 2.2rem;
+            animation: rotate 1s linear infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="inputs-container">
+            <div class="name-container">
+                <input type="text" name="Firstname" placeholder="First Name">
+                <span class="hidden-text">*Enter a valid first name</span>
+            </div>
+            <div class="name-container">
+                <input type="text" name="Lastname" placeholder="Last Name">
+                <span class="hidden-text">*Enter a valid last name</span>
+            </div>
+            <div class="name-container">
+                <input type="email" name="email" placeholder="Email">
+                <span class="hidden-text">*Your email should have a gmail domain</span>
+            </div>
+            <button>Submit</button>
+            <img src="img/loading-circle.png" alt="loading">
+        </div>
+    </form>
+</body>
+
+</html>
