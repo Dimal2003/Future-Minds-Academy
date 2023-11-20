@@ -119,10 +119,10 @@ nav a .show-more {
 	margin-left: auto;
 }
 
-nav a:hover {
+nav a:not(.active):hover {
 	background: rgba(255, 255, 255, 0.41);
-}
-
+  }
+  
 
 
 .active {
