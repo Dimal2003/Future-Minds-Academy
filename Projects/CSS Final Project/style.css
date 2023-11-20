@@ -123,10 +123,13 @@ nav a:hover {
 	background: rgba(255, 255, 255, 0.41);
 }
 
+
+
 .active {
 	background: var(--active-color);
 	color: white;
 }
+
 
 
 .header-container {
