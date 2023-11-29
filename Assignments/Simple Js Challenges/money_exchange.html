@@ -11,10 +11,10 @@
     <script>
 
         let euros = prompt('Write the amount you want to convert !');
+        let exchange_rate = 1.09;
 
-        let dollars = euros * 1.09;
-
-        let exchange_result = `${euros} euros converted to dollars are ${dollars} dollars`;
+        let dollars = euros * exchange_rate;
+        let exchange_result = `${euros} euros exchanged to dollars are ${dollars} dollars`;
 
         console.log(exchange_result);
 
