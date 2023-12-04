@@ -10,24 +10,22 @@
         let number = parseInt(prompt("Write the points you've got"));
 
         let grade;
-        if(number >= 0 && number <= 19){
+        if(number <= 19){
             grade = 1;
         }
-        else if(number >= 20 && number <= 39){
+        else if(number <= 39){
             grade = 2;
         }
-        else if(number >= 40 && number <= 59){
+        else if(number <= 59){
             grade = 3;
         }
-        else if(number >= 60 && number <= 79){
+        else if(number <= 79){
             grade = 4;
         }
-        else if(number >= 80 && number <= 100){
+        else{
             grade = 5;
         }
-        else{
-            console.log("There was an error in your input");
-        }
+        
 
         console.log(`You're grade is: ${grade}`);
     </script>
