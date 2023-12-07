@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closest Answer Game</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            background-color: black;
+            color: white;
+        }
+
+        .player-one,
+        .player-two {
+            height: 5rem;
+            width: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .player-one {
+            background-color: green;
+            font-size: 1em;
+        }
+
+        .player-two {
+            background-color: rgb(255, 11, 11);
+            font-size: 1em;
+        }
+
+        .game-container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .player-input {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1 class="correct-answer" id="correct">The correct answer is </h1>
+        <div style="display: flex;">
+            <div class="player-one" id="playerOne">
+                <span>Player One</span>
+                <span class="player-input" id="input_1"></span>
+            </div>
+            <div class="player-two" id="playerTwo">
+                <span>Player Two</span>
+                <span class="player-input" id="input_2"></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        let answer = Math.floor(Math.random() * 20) + 1;
+        let playerOne = parseInt(prompt('Player One:'));
+        let playerTwo = parseInt(prompt('Player Two:'));
+
+        if (isNaN(playerOne) || isNaN(playerTwo)) {
+            throw new Error('Please write only numbers');
+        }
+
+        if ((playerOne < 0 || playerOne > 20) ||
+            (playerTwo < 0 || playerTwo > 20)) {
+            throw new Error('Only select numbers between 0-20');
+        }
+
+        let playerOneDistance = Math.abs(answer - playerOne);
+        let playerTwoDistance = Math.abs(answer - playerTwo);
+
+        let winner;
+        if (playerOneDistance < playerTwoDistance) {
+            winner = 'Player One';
+        }
+        else {
+            winner = 'Player Two'
+        }
+
+        console.log(`The correct answer is ${answer}`);
+        console.log(`The winner is ${winner}`);
+
+        document.getElementById('correct').innerText = `The correct answer is ${answer}`;
+        document.getElementById('input_1').innerText = `${playerOne}`;
+        document.getElementById('input_2').innerText = `${playerTwo}`;
+
+        document.getElementById('playerOne').style.backgroundColor = winner === 'Player One' ? 'green' : 'red';
+        document.getElementById('playerTwo').style.backgroundColor = winner === 'Player Two' ? 'green' : 'red';
+
+        if (playerOne === playerTwo) {
+            document.getElementById('playerOne').style.backgroundColor = 'orange';
+            document.getElementById('playerTwo').style.backgroundColor = 'orange';
+            document.getElementById('correct').innerText = 'It\'s a tie';
+        }
+    </script>
+</body>
+
+</html>
