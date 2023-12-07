@@ -28,6 +28,9 @@
                 break;
 
             case '/':
+                if(secondNumber == 0){
+                    throw new Error('Can\'t divide by zero!');
+                }
                 result = firstNumber / secondNumber
                 break;
 
