@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let helloWorld = function() {
+            for (let i = 0; i < 10; i++) {
+                console.log('Hello World');
+            }
+        };
+        
+        helloWorld();
+
+        let printString = function(inputString) {
+            console.log(inputString);
+        };
+        printString('hello world');
+
+
+        let distance = function(kilometers) {
+            let conversionFactor = 0.621371;
+            let miles = kilometers * conversionFactor;
+            return `${kilometers} kilometers is equal to ${miles} miles.`;
+        }
+
+        console.log(distance(5));
+        
+        
+        let circleArea = function(radius) {
+            let area = Math.PI * radius ** 2;
+            let result = area.toFixed(2);
+            return `The area of the circle is ${result}`;
+        };
+
+        console.log(circleArea(5));
+
+        
+        let greet = function(name, surname) {
+            return `Welcome, ${name} ${surname}`;
+        }
+
+        let greeting = greet('Dimal', 'Hajrizi');
+        console.log(greeting);
+
+
+        let isWorkingCitizen = function(userAge) {
+            return userAge >= 18 && userAge <= 65;
+        };
+        console.log(isWorkingCitizen(20));
+
+        
+        let isEven = function(number) {
+            return number % 2 === 0;
+        };
+        console.log(isEven(2));
+
+    </script>
+</body>
+
+</html>

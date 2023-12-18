@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Positive Numbers</title>
+</head>
+<body>
+
+<script>
+    let total = 0;
+
+    while (true) {
+        let positiveNumber = prompt("Enter a positive number (or 0 to finish):");
+
+        let number = parseInt(positiveNumber);
+
+        if (isNaN(number) || number < 0) {
+            alert("Invalid input. Please enter a valid positive number or 0.");
+        } else if (number === 0) {
+            break;  
+        } else {
+            total += number;
+        }
+    }
+
+    alert("The sum of the numbers you wrote is equal to " + total);
+</script>
+
+</body>
+</html>
