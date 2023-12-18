@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .progress-bar-container {
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .indicator {
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: grey;
+        }
+
+        .progress-bar-wrapper {
+            width: 1rem;
+            height: 20rem;
+            position: relative;
+            background-color: lightgrey;
+        }
+
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 1rem;
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar-container">
+        <div class="indicator">Progress Bar</div>
+        <div id="bar" class="progress-bar-wrapper">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <script>
+        function modifyProgressBar(percentage, color) {
+            let progressBar = document.querySelector('.progress-bar');
+            progressBar.style.backgroundColor = color;
+            progressBar.style.height = `${percentage}%`;
+            progressBar.setAttribute('title', `${percentage}%`);
+        }
+
+        function isValidPercentage(number) {
+            return !isNaN(number) && number >= 0 && number <= 100;
+        }
+
+        function getProgressColor(percentage) {
+            if (percentage <= 20) {
+                return 'darkred';
+            } else if (percentage <= 50) {
+                return 'orange';
+            } else if (percentage <= 80) {
+                return '#B7FF26';
+            } else {
+                return 'green';
+            }
+        }
+
+        function setProgress(percentage) {
+            if (isValidPercentage(percentage)) {
+                let color = getProgressColor(percentage);
+                modifyProgressBar(percentage, color);
+            } else {
+                throw new Error('Invalid percentage!');
+            }
+        }
+
+        function updateProgressBarRandomly() {
+            let randomPercentage = Math.floor(Math.random() * 101);
+            setProgress(randomPercentage);
+        }
+
+        setInterval(updateProgressBarRandomly, 2000);
+    </script>
+</body>
+
+</html>
