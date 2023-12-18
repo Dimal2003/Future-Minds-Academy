@@ -14,50 +14,43 @@
                 console.log('Hello World');
             }
         };
-        
         helloWorld();
 
-        let printString = function(inputString) {
+        let printString = (inputString) => {
             console.log(inputString);
         };
         printString('hello world');
 
-
+        
         let distance = function(kilometers) {
             let conversionFactor = 0.621371;
             let miles = kilometers * conversionFactor;
             return `${kilometers} kilometers is equal to ${miles} miles.`;
-        }
-
+        };
         console.log(distance(5));
+
         
-        
-        let circleArea = function(radius) {
+        let circleArea = (radius) => {
             let area = Math.PI * radius ** 2;
             let result = area.toFixed(2);
             return `The area of the circle is ${result}`;
         };
-
         console.log(circleArea(5));
 
-        
+
         let greet = function(name, surname) {
             return `Welcome, ${name} ${surname}`;
-        }
-
+        };
+        
         let greeting = greet('Dimal', 'Hajrizi');
         console.log(greeting);
 
 
-        let isWorkingCitizen = function(userAge) {
-            return userAge >= 18 && userAge <= 65;
-        };
+        let isWorkingCitizen = (userAge) => userAge >= 18 && userAge <= 65;
         console.log(isWorkingCitizen(20));
 
-        
-        let isEven = function(number) {
-            return number % 2 === 0;
-        };
+
+        let isEven = (number) => number % 2 === 0;
         console.log(isEven(2));
 
     </script>
