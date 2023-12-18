@@ -54,12 +54,6 @@
     </div>
 
     <script>
-        function modifyProgressBar(percentage, color) {
-            let progressBar = document.querySelector('.progress-bar');
-            progressBar.style.backgroundColor = color;
-            progressBar.style.height = `${percentage}%`;
-            progressBar.setAttribute('title', `${percentage}%`);
-        }
 
         function isValidPercentage(number) {
             return !isNaN(number) && number >= 0 && number <= 100;
@@ -75,6 +69,13 @@
             } else {
                 return 'green';
             }
+        }
+
+        function modifyProgressBar(percentage, color) {
+            let progressBar = document.querySelector('.progress-bar');
+            progressBar.style.backgroundColor = color;
+            progressBar.style.height = `${percentage}%`;
+            progressBar.setAttribute('title', `${percentage}%`);
         }
 
         function setProgress(percentage) {
