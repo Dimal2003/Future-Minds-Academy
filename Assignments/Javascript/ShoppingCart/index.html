@@ -98,20 +98,20 @@
             }
         ];
 
-        const cartItemsContainer = document.getElementById('cart-items');
-        const totalContainer = document.getElementById('total');
+        let cartItemsContainer = document.getElementById('cart-items');
+        let totalContainer = document.getElementById('total');
 
         function displayCartItem(item) {
-            const itemDiv = document.createElement('div');
+            let itemDiv = document.createElement('div');
             itemDiv.className = 'item';
 
-            const totalPrice = item.quantity * item.price;
+            let totalPrice = item.quantity * item.price;
 
             itemDiv.textContent = `
-        ${item.title}
-        Quantity: ${item.quantity}
-        Price: $${totalPrice.toFixed(2)}
-      `;
+            ${item.title}
+            Quantity: ${item.quantity}
+            Price: $${totalPrice.toFixed(2)}
+            `;
 
             cartItemsContainer.appendChild(itemDiv);
 
