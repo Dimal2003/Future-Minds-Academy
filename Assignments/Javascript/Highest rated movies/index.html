@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highest Rated Movies</title>
+  <style>
+   body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4; 
+  margin: 0;
+  padding: 0;
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.highest-rated {
+  background-color: #ffd700; 
+  border: 2px solid #f9f900; 
+  padding: 12px;
+  border-radius: 8px;
+  color: #333; 
+  font-weight: bold; 
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Highest Rated Movies</h1>
+
+  <div id="movies-container"></div>
+  <script>
+    // Array of movie objects
+    let movies = [
+      {
+          name: 'The Godfather',
+          releaseYear: 1972,
+          rating: 9.2,
+          mainActors: ['Marlon Brando', 'Al Pacino', 'James Caan'],
+          imageUrl: 'TheGodfather.jpg'
+      },
+      {
+          name: 'The Shawshank Redemption',
+          releaseYear: 1994,
+          rating: 9.3,
+          mainActors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
+          imageUrl: 'TheShawshankRedemption.jpg'
+      },
+      {
+          name: 'Pulp Fiction',
+          releaseYear: 1994,
+          rating: 8.9,
+          mainActors: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson'],
+          imageUrl: 'PulpFiction.jpg'
+      },
+      {
+          name: 'The Dark Knight',
+          releaseYear: 2008,
+          rating: 9.0,
+          mainActors: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart'],
+          imageUrl: 'TheDarkKnight.jpg'
+      },
+      {
+          name: 'Forrest Gump',
+          releaseYear: 1994,
+          rating: 8.8,
+          mainActors: ['Tom Hanks', 'Robin Wright', 'Gary Sinise'],
+          imageUrl: 'ForrestGump.jpg'
+      }
+    ];
+
+    movies.sort((a, b) => b.rating - a.rating);
+
+    const moviesContainer = document.getElementById('movies-container');
+
+    movies.forEach((movie, index) => {
+      const card = createMovieCard(movie, index === 0);
+      moviesContainer.appendChild(card);
+    });
+
+    function createMovieCard(movie, isHighestRated) {
+      const card = document.createElement('div');
+      card.className = `movie-card ${isHighestRated ? 'highest-rated' : ''}`;
+
+      card.innerHTML = `
+        <h2>${movie.name}</h2>
+        <img src="${movie.imageUrl}" alt="${movie.name}">
+        <p>Release Year: ${movie.releaseYear}</p>
+        <p>Rating: ${movie.rating}</p>
+        <p>Main Actors: ${movie.mainActors.join(', ')}</p>
+      `;
+
+      return card;
+    }
+  </script>
+</body>
+</html>
