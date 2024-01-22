@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="title">My Ecommerce</h1>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="productContainer" class="products">
+        </div>
+    </div>
+
+    <div class="modal hidden">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <div class="modal-content">
+            <img id="productImage" alt="Product Image" width="200" height="200">
+            <div class="text-content">
+                <h2 id="productName">Product Details</h2>
+                <p id="productDescription"></p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay hidden" onclick="closeModal()"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
