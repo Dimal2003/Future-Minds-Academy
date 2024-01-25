@@ -71,7 +71,7 @@ button:hover {
 
 .fact p {
     margin: 0;
-    color: #333; /* Set text color for the facts */
+    color: #333; 
     font-weight: bold;
     display: flex;
     align-items: center;
