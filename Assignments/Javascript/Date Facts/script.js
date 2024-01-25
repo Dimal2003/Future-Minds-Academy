@@ -54,7 +54,7 @@ function getMonthDay(date, offset = 0) {
     const [year, month, day] = date.split('-');
     const adjustedDate = new Date(year, month - 1, day);
     adjustedDate.setMonth(adjustedDate.getMonth() + offset);
-    const adjustedMonth = adjustedDate.getMonth() + 1; // Months are zero-indexed
+    const adjustedMonth = adjustedDate.getMonth() + 1; 
     const adjustedDay = adjustedDate.getDate();
     return `${adjustedMonth}/${adjustedDay}`;
 }
