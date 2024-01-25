@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online and Offline Popup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #offlinePopup {
+            display: none;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: #ff6961;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="offlinePopup">You are offline, please wait until you are reconnected</div>
+
+    <script>
+        const offlinePopup = document.getElementById('offlinePopup');
+
+        function updateOnlineStatus() {
+            if (navigator.onLine) {
+                offlinePopup.style.display = 'none';
+            } else {
+                offlinePopup.style.display = 'block';
+            }
+        }
+
+        // Check online status initially
+        updateOnlineStatus();
+
+        // Add event listeners for online and offline events
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+    </script>
+
+</body>
+</html>
