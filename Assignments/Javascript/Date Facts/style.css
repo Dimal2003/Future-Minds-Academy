@@ -55,7 +55,7 @@ button:hover {
 
 #factContainer {
     margin-top: 20px;
-    text-align: left; /* Align text on the left */
+    text-align: left; 
 }
 
 .fact {
@@ -78,7 +78,7 @@ button:hover {
 }
 
 .fact p::before {
-    content: '🧾'; /* Add an emoji before each fact */
+    content: '🧾'; 
     font-size: 24px;
     margin-right: 10px;
 }
