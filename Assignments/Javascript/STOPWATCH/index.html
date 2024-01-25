@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div id="stopwatch">00:00.00</div>
+        <table id="laps">
+            <thead>
+                <tr>
+                    <th>Lap No</th>
+                    <th>Split Time</th>
+                    <th>Total Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="controls">
+        <button id="start" onclick="startStopwatch()">Start</button>
+        <button id="stop" style="display: none;" onclick="stopStopwatch()">Stop</button>
+        <button id="reset" style="display: none;" onclick="reset()">Reset</button>
+        <button onclick="lap()">Lap</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
