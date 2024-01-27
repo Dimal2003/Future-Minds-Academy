@@ -6,71 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA Photo of the Day</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            padding: 0;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-image: url('5441113.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .date-input {
-            margin-bottom: 10px;
-        }
-
-        img {
-            width: 50rem;
-            height: 50rem;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        p {
-            text-align: justify;
-            margin: 10px;
-        }
-
-        button {
-            background-color: blue;
-            border: none;
-            padding: 10px;
-            border-radius: 0.6rem;
-            margin: 10px;
-            color: white;
-            cursor: pointer;
-        }
-
-       
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
 
 <body>
-    <div class="container">
+    <div class="container-1">
+        <h1><span class="material-icons icon">rocket_launch</span>&nbsp;NASA Photo of the day</h1>
         <input type="date" id="dateInput" class="date-input">
         <button onclick="searchNASA()">Search</button>
-        <h1>NASA Photo of the day</h1>
     </div>
 
-    <div class="container" >
-        <img id="photo" alt="NASA Photo of the day">
+    <div class="container container-hidden" id="resultContainer">
+        <h1 id="title"></h1>
+        <img id="photo">
         <p id="description"></p>
     </div>
+
+    <div class="blockquote-container" id="initialBlockquote">
+        <blockquote>"Space is for everybody. It’s not just for a few people in science or math, <br> or for a select group of astronauts. That’s our new frontier out there, and it’s everybody’s business to know about space." <br> - Christa McAuliffe</blockquote>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
