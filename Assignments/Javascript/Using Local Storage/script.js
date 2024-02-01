@@ -14,10 +14,10 @@ function changeBackgroundColor() {
     }
 }
 
-// Check for saved theme preference on page load
+
 document.addEventListener('DOMContentLoaded', function() {
     let savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
-        changeBackgroundColor(); // Apply dark theme
+        changeBackgroundColor(); 
     }
 });
