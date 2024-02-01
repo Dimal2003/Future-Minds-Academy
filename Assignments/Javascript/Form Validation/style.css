@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 20px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid gainsboro;
+	outline: none;
+	background: none;
+}
+
+.requirements {
+	color: red;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.valid {
+	color: green;
+}
+
+#submitBtn {
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#submitBtn:disabled {
+	background-color: #aaaaaa;
+	cursor: not-allowed;
+}
+
+.form-container {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 60px;
+	background-color: white;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	color: rgb(45, 78, 107);
+}
+
+.form-group {
+	margin: 10px 0;
+}
+
+.input-label {
+	color: rgb(1, 5, 15);
+	font-size: 1.2em;
+}
+
+.forgot-password {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 0.9em;
+	margin: 5px;
+}
+
+.forgot-password a {
+	text-decoration: none;
+	color: black;
+}
+
+.button-container {
+	text-align: center;
+}
+
+.login-button {
+	border: none;
+	padding: 5px;
+	width: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: rgb(62, 79, 94);
+	color: white;
+	font-family: inherit;
+	font-size: 1.2em;
+}
