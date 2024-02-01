@@ -1,0 +1,105 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --button-bg-color: black;
+    --button-text-color: white;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .toggle-container span {
+    margin-right: 10px;
+  }
+  
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-checkbox:checked + .toggle-button {
+    background-color: #2196F3;
+  }
+  
+  .toggle-button::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-checkbox:checked + .toggle-button::before {
+    transform: translateX(26px);
+  }
+  
