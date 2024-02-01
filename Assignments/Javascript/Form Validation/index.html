@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form-container" id="myForm">
+        <h2 class="title">Log In</h2>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="input-field" id="email" name="email" placeholder="Email" required><br>
+        </div>
+        <div class="form-group">
+
+
+            <label for="password">Password:</label>
+            <input type="password" class="input-field" id="password" name="password" placeholder="Password"
+                required><br>
+        </div>
+        <div class="forgot-password"><a href="#">Forgot Password ?</a></div>
+        <div class="button-container">
+            <button class="login-button" id="submitBtn" disabled>Log in</button>
+        </div>
+
+        <div class="requirements">
+            Password must contain:
+            <ul>
+              <li id="lowercase">At least one lowercase letter</li>
+              <li id="uppercase">At least one uppercase letter</li>
+              <li id="number">At least one number</li>
+              <li id="special">At least one of the following characters: (.,'!#)</li>
+            </ul>
+          </div>
+        </form>
+      </div>
+
+    </form>
+</body>
+</html>
+
+<script>
+  function setupFormValidation() {
+    const form = document.getElementById('myForm');
+    const passwordInput = document.getElementById('password');
+    const lowercaseReq = document.getElementById('lowercase');
+    const uppercaseReq = document.getElementById('uppercase');
+    const numberReq = document.getElementById('number');
+    const specialReq = document.getElementById('special');
+    const submitBtn = document.getElementById('submitBtn');
+
+    function validatePassword() {
+      const password = passwordInput.value;
+      const lowercaseRegex = /[a-z]/;
+      const uppercaseRegex = /[A-Z]/;
+      const numberRegex = /[0-9]/;
+      const specialCharRegex = /[.,'!#]/;
+
+      lowercaseReq.classList.toggle('valid', lowercaseRegex.test(password));
+      uppercaseReq.classList.toggle('valid', uppercaseRegex.test(password));
+      numberReq.classList.toggle('valid', numberRegex.test(password));
+      specialReq.classList.toggle('valid', specialCharRegex.test(password));
+
+      submitBtn.disabled = !(lowercaseRegex.test(password) && 
+                             uppercaseRegex.test(password) && 
+                             numberRegex.test(password) && 
+                             specialCharRegex.test(password));
+    }
+
+    passwordInput.addEventListener('input', validatePassword);
+  }
+
+  document.addEventListener('DOMContentLoaded', setupFormValidation);
+</script>
+
+</body>
+</html>
