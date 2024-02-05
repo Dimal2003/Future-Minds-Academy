@@ -89,6 +89,7 @@ nav {
 	padding: 0.7rem;
 	background-color: var(--sidebar-overlay);
 	background-blend-mode: darken;
+	min-height: 100vh;
 }
 
 ul {
@@ -163,10 +164,6 @@ nav a:not(.active):hover {
 	z-index: 1;
 	top: -0.5rem;
 	right: 1.8rem;
-}
-
-.notification-dropdown:hover .dropdown-content {
-	display: block;
 }
 
 .notification-dropdown ul {
