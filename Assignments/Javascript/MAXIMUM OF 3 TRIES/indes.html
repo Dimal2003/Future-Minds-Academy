@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Guessing Game</title>
+</head>
+<body>
+<script>
+    let attempts = 3;
+let correct = false;
+
+function checkPassword() {
+  while (attempts > 0 && !correct) {
+    let password = prompt(`Enter the password (${attempts} tries left):`);
+    if (password === '12341234') {
+      correct = true;
+      alert("Welcome!");
+    } else {
+      attempts--;
+      if (attempts > 0) {
+        alert("Incorrect password. Try again.");
+      } else {
+        alert("Sorry, you've used all your attempts.");
+      }
+    }
+  }
+}
+checkPassword();
+
+</script>
+</body>
+</html>
